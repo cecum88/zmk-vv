@@ -129,6 +129,27 @@
             bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG_WIN";
         };
+
+        h0: h0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PRCNT &kp X &kp LS(K) &kp K &kp LS(U) &kp EXCL &kp H &kp N7 &kp RET>;
+            label = "H0";
+        };
+
+        w1: w1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp E &kp C &kp A &kp FSLH &kp X &kp N3 &kp LS(E) &kp I &kp D &kp O &kp O &kp N8 &kp N3 &kp N8 &kp N3>;
+            label = "W1";
+        };
+
+        w2: w2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp E &kp C &kp A &kp FSLH &kp X &kp N3 &kp LS(E) &kp I &kp D &kp O &kp O &kp N4 &kp N3 &kp N4 &kp N3>;
+            label = "W2";
+        };
     };
 
     keymap {
@@ -157,7 +178,7 @@
 
         nav {
             bindings = <
-&none  &none  &kp RU_N7           &kp RU_N8            &kp N4        &kp NUMBER_0                  &mt LS(HOME) HOME  &kp PAGE_DOWN   &kp PAGE_UP   &mt LS(END) END  &none  &kp DELETE
+&none  &none  &kp RU_N7           &kp RU_N8            &kp N9        &kp NUMBER_0                  &mt LS(HOME) HOME  &kp PAGE_DOWN   &kp PAGE_UP   &mt LS(END) END  &none  &kp DELETE
 &none  &none  &kp NUMBER_4        &kp NUMBER_5         &kp N6        &none                         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
 &none  &none  &kp N1              &kp NUMBER_2         &kp NUMBER_3  &kp DEL                       &none              &none           &none         &none            &none  &none
               &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none         &none         &none    &none  &none              &trans          &none         &none
@@ -189,10 +210,10 @@
 
         adj {
             bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F10                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11                  &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &none         &studio_unlock
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F12                  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &none
-              &none   &none   &none   &none    &none    &none  &none         &none         &none             &none
+&none                   &h0                      &kp F7  &kp F8  &kp F9  &kp F10                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&kp F22                 &kp F23                  &kp F4  &kp F5  &kp F6  &kp F11                  &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp F1  &kp F2  &kp F3  &kp F12                  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &none
+                                                 &w2     &w1     &none   &none    &none    &none  &none         &none         &none             &none
             >;
 
             display-name = "Adjust";
