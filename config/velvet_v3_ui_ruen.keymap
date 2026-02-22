@@ -3,6 +3,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -257,7 +258,7 @@
 &kp LG(ESC)  &kp LG(LC(Q))  &kp LG(LC(W))  &kp LG(LC(E))  &kp LG(LC(R))  &kp LG(LC(T))                  &kp LG(LC(Y))  &kp LG(LC(U))  &kp LG(LC(I))  &kp LG(LC(O))  &kp LG(LC(P))     &none
 &none        &kp LG(LC(A))  &kp LG(LC(S))  &kp LG(LC(D))  &kp LG(LC(F))  &kp LG(LC(G))                  &kp LG(LC(H))  &kp LG(LC(J))  &kp LG(LC(K))  &kp LG(LC(L))  &kp LG(LC(SEMI))  &none
 &none        &none          &none          &none          &none          &none                          &none          &none          &none          &none          &none             &none
-                            &none          &none          &none          &none          &none    &none  &none          &none          &none          &none
+                            &none          &none          &none          &none          &none    &none  &none          &none          &bl BL_CYCLE   &bl BL_TOG
             >;
 
             label = "WM";
