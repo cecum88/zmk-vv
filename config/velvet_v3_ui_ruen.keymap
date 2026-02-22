@@ -69,6 +69,12 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        middle_combo {
+            bindings = <&mkp MCLK>;
+            key-positions = <36 37>;
+            layers = <9>;
+        };
     };
 
     macros {
@@ -266,8 +272,8 @@
             bindings = <
 &kp LG(ESC)  &kp LG(LC(Q))  &kp LG(LC(W))  &kp LG(LC(E))  &kp LG(LC(R))  &kp LG(LC(T))                  &kp LG(LC(Y))  &kp LG(LC(U))  &kp LG(LC(I))  &kp LG(LC(O))  &kp LG(LC(P))     &none
 &none        &kp LG(LC(A))  &kp LG(LC(S))  &kp LG(LC(D))  &kp LG(LC(F))  &kp LG(LC(G))                  &kp LG(LC(H))  &kp LG(LC(J))  &kp LG(LC(K))  &kp LG(LC(L))  &kp LG(LC(SEMI))  &none
-&none        &none          &none          &none          &none          &none                          &none          &none          &none          &none          &none             &none
-                            &none          &none          &none          &none          &none    &none  &none          &none          &bl BL_CYCLE   &bl BL_TOG
+&mo 8        &none          &none          &none          &none          &none                          &none          &none          &none          &none          &none             &none
+                            &mkp RCLK      &mkp LCLK      &none          &none          &none    &none  &none          &none          &bl BL_CYCLE   &bl BL_TOG
             >;
 
             label = "WM";
