@@ -172,7 +172,7 @@
 &kp ESC       &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U            &kp RU_CYRILLIC_KA       &kp RU_CYRILLIC_IE                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA          &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE             &kp BSPC
 &kp TAB       &mt LWIN RU_CYRILLIC_EF  &mt LSHFT RU_CYRILLIC_YERU  &mt LEFT_ALT RU_CYRILLIC_VE  &mt LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                              &kp RU_CYRILLIC_ER  &mt RCTRL RU_CYRILLIC_O    &mt LEFT_ALT RU_CYRILLIC_EL  &mt RSHFT RU_CYRILLIC_DE   &mt RIGHT_GUI RU_CYRILLIC_ZHE  &kp BSLH
 &kp LEFT_ALT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES           &kp RU_CYRILLIC_EM       &kp RU_CYRILLIC_I                               &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE           &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E              &kp RALT
-                                       &msc SCRL_UP                &msc SCRL_DOWN               &kp LCTRL                &td_lang_nix 4 0    &lt 1 SPACE    &lt 1 ENTER  &lt 4 BACKSPACE     &none                      &kp RU_CYRILLIC_HA           &kp RU_CYRILLIC_HARD_SIGN
+                                       &msc SCRL_UP                &msc SCRL_DOWN               &tog 1                   &td_lang_nix 5 0    &lt 2 SPACE    &lt 2 ENTER  &lt 4 BACKSPACE     &none                      &kp RU_CYRILLIC_HA           &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
