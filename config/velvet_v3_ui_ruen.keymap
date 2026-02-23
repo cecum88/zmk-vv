@@ -3,7 +3,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -225,10 +224,10 @@
 
         adj {
             bindings = <
-&none                   &h0                      &kp F7  &kp F8  &kp F9  &kp F10                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&kp F22                 &kp F23                  &kp F4  &kp F5  &kp F6  &kp F11                  &out OUT_BLE  &none         &none         &none         &none         &studio_unlock
-&kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp F1  &kp F2  &kp F3  &kp F12                  &out OUT_USB  &none         &none         &none         &none         &none
-                                                 &w2     &w1     &none   &none    &none    &none  &none         &none         &none         &none
+&none                   &h0                      &kp F7  &kp F8  &kp F9  &kp F10                  &none  &none  &none         &none         &none  &none
+&kp F22                 &kp F23                  &kp F4  &kp F5  &kp F6  &kp F11                  &none  &none  &none         &none         &none  &none
+&kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp F1  &kp F2  &kp F3  &kp F12                  &none  &none  &none         &none         &none  &none
+                                                 &w2     &w1     &none   &none    &none    &none  &none  &none  &out OUT_BLE  &out OUT_USB
             >;
 
             display-name = "Adjust";
