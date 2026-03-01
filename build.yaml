@@ -2,6 +2,7 @@
 include:
   - board: ergohaven
     shield: velvet_v3_ui_left
+    artifact-name: velvet_v3_ui_left
   - board: ergohaven
     shield: velvet_v3_ui_qube qube dongle_screen
     keymap: velvet_v3_ui_ruen
@@ -14,3 +15,5 @@ include:
 
   - board: ergohaven
     shield: settings_reset
+    artifact-name: settings_reset
+
