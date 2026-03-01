@@ -7,9 +7,10 @@ include:
     keymap: velvet_v3_ui_ruen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: velvet_v3_ui_qube_ruen-ergohaven-zmk
+    artifact-name: velvet_v3_ui_qube
   - board: ergohaven
     shield: velvet_v3_ui_right_qube
+    artifact-name: velvet_v3_ui_right
 
   - board: ergohaven
     shield: settings_reset
