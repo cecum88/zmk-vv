@@ -225,7 +225,7 @@
                          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none         &none         &none    &none  &none                  &trans          &none         &none
             >;
 
-            display-name = "GO";
+            display-name = "MV";
         };
 
         sym_en {
