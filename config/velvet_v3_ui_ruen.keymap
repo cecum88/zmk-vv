@@ -66,6 +66,24 @@
             tapping-term-ms = <250>;
         };
 
+        ht_400: ht_400 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_400";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+        };
+
+        mt_150: mt_150 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_150";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
+
         zip_auto_mouse: zip_auto_mouse {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
@@ -182,32 +200,32 @@
             bindings = <
 &kp ESC    &kp Q               &kp W                 &kp E               &kp R              &kp T                                          &kp Y            &kp U            &kp I               &kp O              &kp P                  &kp BSPC
 &kp TAB    &ht_200 LEFT_GUI A  &ht_200 LEFT_SHIFT S  &ht_200 LEFT_ALT D  &ht_200 LCTRL F    &kp G                                          &kp H            &ht_200 RCTRL J  &ht_200 LEFT_ALT K  &ht_200 RSHFT L    &ht_200 LEFT_WIN SEMI  &kp BSLH
-&kp LSHFT  &kp Z               &kp X                 &ht_150 LC(INS) C   &ht_250 LS(INS) V  &kp B                                          &kp N            &kp M            &kp COMMA           &kp DOT            &kp SQT                &mo 6
-                               &mkp RCLK             &mkp LCLK           &mt_125 6 1        &td_lang_nix 5 0  &lt 2 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE  &none            &kp LEFT_BRACKET    &kp RIGHT_BRACKET
+&kp LSHFT  &kp Z               &kp X                 &ht_200 LC(INS) C   &ht_400 LS(INS) V  &kp B                                          &kp N            &kp M            &kp COMMA           &kp DOT            &kp SQT                &mo 6
+                               &mkp RCLK             &mkp LCLK           &mt_150 6 1        &td_lang_nix 5 0  &lt 2 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE  &none            &kp LEFT_BRACKET    &kp RIGHT_BRACKET
             >;
 
-            display-name = "Base";
+            display-name = "EN";
         };
 
         ru {
-            display-name = "Ru";
+            display-name = "RU";
             bindings = <
 &kp ESC         &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U                &kp RU_CYRILLIC_KA              &kp RU_CYRILLIC_IE                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE          &kp RU_CYRILLIC_SHA              &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE                 &kp BSPC
 &kp TAB         &ht_200 LWIN RU_CYRILLIC_EF  &ht_200 LSHFT RU_CYRILLIC_YERU  &ht_200 LEFT_ALT RU_CYRILLIC_VE  &ht_200 LCTRL RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                              &kp RU_CYRILLIC_ER  &ht_200 RCTRL RU_CYRILLIC_O  &ht_200 LEFT_ALT RU_CYRILLIC_EL  &ht_200 RSHFT RU_CYRILLIC_DE  &ht_200 RIGHT_GUI RU_CYRILLIC_ZHE  &kp BSLH
-&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE             &ht_150 LC(INS) RU_CYRILLIC_ES   &ht_250 LS(INS) RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                               &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN    &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E                  &mo 6
-                                             &mkp RCLK                       &mkp LCLK                        &mt_125 6 1                     &td_lang_nix 5 0    &lt 2 SPACE    &lt 2 ENTER  &lt 4 BACKSPACE     &none                        &kp RU_CYRILLIC_HA               &kp RU_CYRILLIC_HARD_SIGN
+&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE             &ht_200 LC(INS) RU_CYRILLIC_ES   &ht_400 LS(INS) RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                               &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN    &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E                  &mo 6
+                                             &mkp RCLK                       &mkp LCLK                        &mt_150 6 1                     &td_lang_nix 5 0    &lt 2 SPACE    &lt 2 ENTER  &lt 4 BACKSPACE     &none                        &kp RU_CYRILLIC_HA               &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
         nav {
             bindings = <
-&kp C_PLAY_PAUSE  &none  &kp RU_N7           &kp RU_N8            &kp N9        &kp NUMBER_0                  &ht_200 LS(HOME) HOME  &kp PAGE_DOWN   &kp PAGE_UP   &ht_200 LS(END) END  &none  &kp DELETE
+&kp C_PLAY_PAUSE  &none  &kp RU_N7           &kp RU_N8            &kp N9        &kp NUMBER_0                  &ht_250 LS(HOME) HOME  &kp PAGE_DOWN   &kp PAGE_UP   &ht_250 LS(END) END  &none  &kp DELETE
 &kp C_STOP        &none  &kp NUMBER_4        &kp NUMBER_5         &kp N6        &none                         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &none  &none
 &kp F20           &none  &kp N1              &kp NUMBER_2         &kp NUMBER_3  &kp DEL                       &none                  &none           &none         &none                &none  &none
                          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none         &none         &none    &none  &none                  &trans          &none         &none
             >;
 
-            display-name = "Nav";
+            display-name = "GO";
         };
 
         sym_en {
@@ -218,11 +236,11 @@
                      &none     &none      &none     &lg_tog_win   &none    &none  &none      &trans    &kp LBKT   &kp RBKT
             >;
 
-            display-name = "Symbols";
+            display-name = "SS";
         };
 
         sym_ru {
-            display-name = "Symbols";
+            display-name = "SS";
             bindings = <
 &none     &none      &en LT       &kp EQUAL          &en GT       &kp RU_CYRILLIC_IO                  &en CARET       &kp RU_DQT  &kp RU_COLON  &en SQT     &none      &none
 &en DLLR  &en HASH   &kp LPAR     &kp MINUS          &kp RPAR     &kp RU_ASTERISK                     &kp RU_PERCENT  &en LBRC    &kp RU_SEMI   &en RBRC    &kp EXCL   &kp RU_QMARK
@@ -239,7 +257,7 @@
                                                  &w2     &w1     &none   &none    &none    &none  &none  &none  &kp F23  &kp F24
             >;
 
-            display-name = "Adjust";
+            display-name = "FU";
         };
 
         mango {
@@ -250,7 +268,7 @@
                             &msc SCRL_UP   &msc SCRL_DOWN  &none          &none          &none    &none  &none          &none          &out OUT_USB   &out OUT_BLE
             >;
 
-            display-name = "Mango";
+            display-name = "WM";
         };
     };
 };
