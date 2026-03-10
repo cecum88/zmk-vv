@@ -84,6 +84,15 @@
             tapping-term-ms = <150>;
         };
 
+        ht_300: ht_300 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_300";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+
         zip_auto_mouse: zip_auto_mouse {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
@@ -200,7 +209,7 @@
             bindings = <
 &kp ESC    &kp Q               &kp W                 &kp E               &kp R              &kp T                                          &kp Y            &kp U            &kp I               &kp O              &kp P                  &kp BSPC
 &kp TAB    &ht_200 LEFT_GUI A  &ht_200 LEFT_SHIFT S  &ht_200 LEFT_ALT D  &ht_200 LCTRL F    &kp G                                          &kp H            &ht_200 RCTRL J  &ht_200 LEFT_ALT K  &ht_200 RSHFT L    &ht_200 LEFT_WIN SEMI  &kp BSLH
-&kp LSHFT  &kp Z               &kp X                 &ht_200 LC(INS) C   &ht_400 LS(INS) V  &kp B                                          &kp N            &kp M            &kp COMMA           &kp DOT            &kp SQT                &mo 6
+&kp LSHFT  &kp Z               &kp X                 &ht_200 LC(INS) C   &ht_300 LS(INS) V  &kp B                                          &kp N            &kp M            &kp COMMA           &kp DOT            &kp SQT                &mo 6
                                &mkp RCLK             &mkp LCLK           &mt_150 6 1        &td_lang_nix 5 0  &lt 2 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE  &none            &kp LEFT_BRACKET    &kp RIGHT_BRACKET
             >;
 
@@ -212,7 +221,7 @@
             bindings = <
 &kp ESC         &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U                &kp RU_CYRILLIC_KA              &kp RU_CYRILLIC_IE                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE          &kp RU_CYRILLIC_SHA              &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE                 &kp BSPC
 &kp TAB         &ht_200 LWIN RU_CYRILLIC_EF  &ht_200 LSHFT RU_CYRILLIC_YERU  &ht_200 LEFT_ALT RU_CYRILLIC_VE  &ht_200 LCTRL RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                              &kp RU_CYRILLIC_ER  &ht_200 RCTRL RU_CYRILLIC_O  &ht_200 LEFT_ALT RU_CYRILLIC_EL  &ht_200 RSHFT RU_CYRILLIC_DE  &ht_200 RIGHT_GUI RU_CYRILLIC_ZHE  &kp BSLH
-&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE             &ht_200 LC(INS) RU_CYRILLIC_ES   &ht_400 LS(INS) RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                               &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN    &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E                  &mo 6
+&kp LEFT_SHIFT  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE             &ht_200 LC(INS) RU_CYRILLIC_ES   &ht_300 LS(INS) RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                               &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN    &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E                  &mo 6
                                              &mkp RCLK                       &mkp LCLK                        &mt_150 6 1                     &td_lang_nix 5 0    &lt 2 SPACE    &lt 2 ENTER  &lt 4 BACKSPACE     &none                        &kp RU_CYRILLIC_HA               &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
