@@ -234,7 +234,7 @@
                          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none         &none         &none    &none  &none                  &trans          &none         &none
             >;
 
-            display-name = " MV";
+            display-name = "  MV";
         };
 
         sym_en {
@@ -245,11 +245,11 @@
                      &none     &none      &none     &lg_tog_win   &none    &none  &none      &trans    &kp LBKT   &kp RBKT
             >;
 
-            display-name = "󱔁 SS";
+            display-name = "  SS";
         };
 
         sym_ru {
-            display-name = "󱔁 SS";
+            display-name = "  SS";
             bindings = <
 &none     &none      &en LT       &kp EQUAL          &en GT       &kp RU_CYRILLIC_IO                  &en CARET       &kp RU_DQT  &kp RU_COLON  &en SQT     &none      &none
 &en DLLR  &en HASH   &kp LPAR     &kp MINUS          &kp RPAR     &kp RU_ASTERISK                     &kp RU_PERCENT  &en LBRC    &kp RU_SEMI   &en RBRC    &kp EXCL   &kp RU_QMARK
@@ -266,7 +266,7 @@
                                                  &w2     &w1     &none   &none    &none    &none  &none  &none  &kp F23  &kp F24
             >;
 
-            display-name = " FU";
+            display-name = "  FU";
         };
 
         mango {
@@ -277,7 +277,7 @@
                             &msc SCRL_UP   &msc SCRL_DOWN  &none          &none          &none    &none  &none          &none          &out OUT_USB   &out OUT_BLE
             >;
 
-            display-name = "󰾅 WM";
+            display-name = "󰾅  WM";
         };
     };
 };
